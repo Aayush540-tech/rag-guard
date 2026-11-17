@@ -42,6 +42,10 @@ from rag_guard.sweep import (
     ThresholdResult,
     run_threshold_sweep,
 )
+from rag_guard.vllm_hook import (
+    AsyncRAGGuard,
+    MockAsyncLLMEngine,
+)
 
 __version__ = "0.1.0"
 
@@ -77,4 +81,7 @@ __all__ = [
     "SweepSummary",
     "ThresholdResult",
     "run_threshold_sweep",
+    # Async vLLM Middleware
+    "AsyncRAGGuard",
+    "MockAsyncLLMEngine",
 ]
