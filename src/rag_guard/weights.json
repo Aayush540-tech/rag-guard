@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "feature_names": [
+    "l_bar",
+    "l_min",
+    "var_l",
+    "H_bar",
+    "R_entity"
+  ],
+  "weights_raw": [
+    1.425,
+    1.865,
+    -0.684,
+    -1.240,
+    2.150
+  ],
+  "bias_raw": 0.120,
+  "optimal_threshold": 0.50,
+  "calibration_metadata": {
+    "dataset": "RAGTruth",
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "baseline_roc_auc": 0.892,
+    "folding_method": "algebraic_scaler_folding",
+    "feature_descriptions": {
+      "l_bar": "Mean Sequence Log-Probability",
+      "l_min": "Minimum Token Log-Probability (Hesitation)",
+      "var_l": "Log-Probability Variance (Confidence Fluctuation)",
+      "H_bar": "Mean Predictive Shannon Entropy in bits",
+      "R_entity": "Deterministic Entity Grounding Ratio"
+    }
+  }
+}
