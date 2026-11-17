@@ -36,6 +36,12 @@ from rag_guard.stream import (
     StreamFinalResult,
     StreamStepResult,
 )
+from rag_guard.sweep import (
+    DEFAULT_SWEEP_THRESHOLDS,
+    SweepSummary,
+    ThresholdResult,
+    run_threshold_sweep,
+)
 
 __version__ = "0.1.0"
 
@@ -66,4 +72,9 @@ __all__ = [
     "CrossValidationMetrics",
     "FoldedWeights",
     "calibrate_and_fold",
+    # Threshold Sensitivity Sweep
+    "DEFAULT_SWEEP_THRESHOLDS",
+    "SweepSummary",
+    "ThresholdResult",
+    "run_threshold_sweep",
 ]
