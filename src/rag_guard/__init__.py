@@ -7,9 +7,15 @@ for Real-Time RAG Hallucination Detection.
 
 from __future__ import annotations
 
+from rag_guard.calibrate import (
+    CrossValidationMetrics,
+    FoldedWeights,
+    calibrate_and_fold,
+)
 from rag_guard.config import (
     DEFAULT_FUZZY_THRESHOLD,
     DEFAULT_TOP_K_LOGPROBS,
+    DEFAULT_WEIGHTS_PATH,
     FEATURE_NAMES,
     LATENCY_BUDGET_MS,
     STREAM_CLAUSE_DELIMITERS,
@@ -38,6 +44,7 @@ __all__ = [
     # Config
     "DEFAULT_FUZZY_THRESHOLD",
     "DEFAULT_TOP_K_LOGPROBS",
+    "DEFAULT_WEIGHTS_PATH",
     "FEATURE_NAMES",
     "LATENCY_BUDGET_MS",
     "STREAM_CLAUSE_DELIMITERS",
@@ -55,4 +62,8 @@ __all__ = [
     "RAGGuardStream",
     "StreamStepResult",
     "StreamFinalResult",
+    # Calibration & Weight Folding
+    "CrossValidationMetrics",
+    "FoldedWeights",
+    "calibrate_and_fold",
 ]
